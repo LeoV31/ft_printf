@@ -57,8 +57,11 @@ char	*ft_uitoa(unsigned int n)
 int	ft_printunsigned(unsigned int nbr)
 {
 	char	*str;
+	int		len;
 
 	str = ft_uitoa(nbr);
 	ft_putstr_fd(str, 1);
-	return (ft_strlen(str));
+	len = ft_strlen(str);
+	free(str);
+	return (len);
 }

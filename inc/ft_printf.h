@@ -15,6 +15,7 @@
 
 # include <stdarg.h>
 # include <unistd.h>
+# include "stdlib.h"
 
 int		ft_printchar(int c);
 int		ft_printstr(char *str);
@@ -28,7 +29,7 @@ int		ft_printunsigned(unsigned int nbr);
 int		ft_hexlen(unsigned int nbr);
 int		ft_printhex(unsigned int nbr, char format);
 int		ft_printnbrhex(unsigned int nbr, char format);
-int		ft_print(va_list args, const char format);
+int		ft_print(va_list *args, const char format);
 int		ft_printf(const char *format, ...);
 
 #endif

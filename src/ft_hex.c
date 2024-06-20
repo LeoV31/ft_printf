@@ -31,7 +31,7 @@ int	ft_printhex(unsigned int nbr, char format)
 	int	printed_nbrs;
 
 	printed_nbrs = 0;
-	if (nbr > 16)
+	if (nbr >= 16)
 	{
 		ft_printhex(nbr / 16, format);
 		ft_printhex(nbr % 16, format);

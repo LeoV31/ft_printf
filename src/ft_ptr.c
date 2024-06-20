@@ -31,7 +31,7 @@ int	ft_printhexptr(unsigned long long nbr)
 	int	printed_nbrs;
 
 	printed_nbrs = 0;
-	if (nbr > 16)
+	if (nbr >= 16)
 	{
 		ft_printhexptr(nbr / 16);
 		ft_printhexptr(nbr % 16);
